@@ -1,75 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Blog</title>
-    <link rel="stylesheet" href="./nav.css" />
-    <link rel="stylesheet" href="./body.css" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="navtitle"><strong>Q.N.</strong>|MY PROFILE</div>
-      <a href="home.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="blog.html">BLOG</a>
-      <a href="album.html">ALBUM</a>
-      <a href="join.html">JOIN</a>
-      <div class="navanim blog"></div>
-      <div class="none"></div>
-    </nav>
-    <div class="mid">
-      <div class="content">
-        <div class="con c1">
-          <div class="imghid">
-            <div class="img"></div>
-          </div>
-          <div class="txt">
-            <h2>My first game</h2>
-            <p>&emsp;first simple video game made by myself</p>
-          </div>
-        </div>
-        <div class="con c2">
-          <div class="imghid">
-            <div class="img"></div>
-          </div>
-          <div class="txt">
-            <h2>curriculum</h2>
-            <p>my curriculum</p>
-          </div>
-        </div>
-        <div class="con c3">
-          <div class="imghid">
-            <div class="img"></div>
-          </div>
-          <div class="txt">
-            <h2>WEB Album</h2>
-            <p>&emsp;my web album</p>
-          </div>
-        </div>
-      </div>
-      <div class="pri">
-        <div class="prihead">
-          <a href="join.html"><div class="tx"></div></a>
-          <h2>Quincey</h2>
-          <p>Stay hungry, stay foolish.</p>
-        </div>
-        <div class="tag">
-          <h2>TAG</h2>
-          <p>
-            C&emsp;&emsp;C++ &emsp;C#&emsp;
-            HTML&emsp;&emsp;CSS&emsp;&emsp;Java&emsp;&emsp;JavaScript&emsp;Unity&emsp;&emsp;UnrealEngine
-            Python &emsp;MySQL &emsp;ML
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <footer class="foot">
-      <p>@2022-2023 | BY:Quincey</p>
-      <p>Cease to struggle and you cease to live</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./Loading.css" />
+</head>
+<body>
+<div class="back" id="back">
+  <div class="log" id="log">
+    <div class="logtitle">LOGIN</div>
+    <p></p>
+    <form
+            action="home.html"
+            id="logbody"
+            class="logbody"
+            onsubmit="return login()"
+    >
+      <input
+              type="text"
+              id="zh"
+              size="20"
+              class="txt"
+              placeholder="Account"
+      />
+      <br />
+      <input
+              type="password"
+              id="mm"
+              size="20"
+              class="txt"
+              placeholder="Password"
+      />
+      <br />
+      <input type="submit" value="Login" id="sub" class="sub" />
+      <a href="home.html"
+      ><input type="button" value="Guest Login" id="ykbt" class="ykbt"
+      /></a>
+    </form>
+  </div>
+</div>
+<div class="con" id="con">
+  <div class="load">
+    <div class="dot" style="--i: 0"></div>
+    <div class="dot" style="--i: 1"></div>
+    <div class="dot" style="--i: 2"></div>
+    <div class="dot" style="--i: 3"></div>
+    <div class="dot" style="--i: 4"></div>
+    <div class="dot" style="--i: 5"></div>
+    <div class="dot" style="--i: 6"></div>
+  </div>
+</div>
+<script src="../js/login.js"></script>
+</body>
 </html>
